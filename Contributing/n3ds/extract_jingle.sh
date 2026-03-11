@@ -27,5 +27,16 @@ with open('banner_dir/banner.bcwav','wb') as f:
 
     rm -r partition0.cxi exefs.bin exefs_dir/ banner.bin banner_dir/
 
-    echo "Saved: $OUTPUT"
+    FINAL=$(echo "$OUTPUT" \
+        | sed "s/'//g" \
+        | sed 's/([^)]*)//g' \
+        | sed 's/ *- */-/g' \
+        | sed 's/ /-/g' \
+        | sed 's/--*/-/g' \
+        | sed 's/^-//; s/-$//' \
+        | sed 's/-\(\.[^.]*\)$/\1/' \
+        | tr '[:upper:]' '[:lower:]')
+    [ "$FINAL" != "$OUTPUT" ] && mv "$OUTPUT" "$FINAL"
+
+    echo "Saved: $FINAL"
 done
