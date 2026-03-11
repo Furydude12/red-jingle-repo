@@ -1,8 +1,9 @@
 #!/bin/bash
 
-for ROM in *.3ds; do
+shopt -s nullglob
+for ROM in *.3ds *.cci; do
     echo "Processing $ROM..."
-    OUTPUT="${ROM%.3ds}.wav"
+    OUTPUT="${ROM%.*}.wav"
 
     3dstool -xvtf cci "$ROM" -0 partition0.cxi --header /dev/null
     3dstool -xvtf cxi partition0.cxi --exefs exefs.bin --exefs-auto-key
