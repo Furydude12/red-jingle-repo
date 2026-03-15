@@ -1,0 +1,469 @@
+{
+  "name": "Red's Jingles Pack",
+  "entries": [
+    {
+      "game": "(?i)^(?=.*\\b7th\\b)(?=.*\\bdragon\\b)(?=.*\\biii\\b)(?=.*\\bcode\\b)(?=.*\\bvfd\\b).*$",
+      "file": "jingles/n3ds/7th-dragon-3-vfd.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bace\\b)(?=.*\\bcombat\\b)(?=.*\\bassault\\b)(?=.*\\bhorizon\\b)(?=.*\\blegacy\\b).*$",
+      "file": "jingles/n3ds/ace-combat-ahl.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\banimal\\b)(?=.*\\bcrossing\\b)(?=.*\\bnew\\b)(?=.*\\bleaf\\b).*$",
+      "file": "jingles/n3ds/animal-crossing-new-leaf.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bbeyond\\b)(?=.*\\blabyrinth\\b).*$",
+      "file": "jingles/n3ds/beyond-labyrinth.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bbravely\\b)(?=.*\\bdefault\\b).*$",
+      "file": "jingles/n3ds/bravely-default.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bbravely\\b)(?=.*\\bsecond\\b)(?=.*\\bend\\b)(?=.*\\blayer\\b).*$",
+      "file": "jingles/n3ds/bravely-second.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bcaptain\\b)(?=.*\\btoad\\b)(?=.*\\btreasure\\b)(?=.*\\btracker\\b).*$",
+      "file": "jingles/n3ds/captain-toad.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bcrimson\\b)(?=.*\\bshroud\\b).*$",
+      "file": "jingles/n3ds/crimson-shroud.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bdonkey\\b)(?=.*\\bkong\\b)(?=.*\\bcountry\\b)(?=.*\\breturns\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/dkc-returns.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bdragon\\b)(?=.*\\bball\\b)(?=.*\\bfusions\\b).*$",
+      "file": "jingles/n3ds/db-fusions.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bdragon\\b)(?=.*\\bball\\b)(?=.*\\bz\\b)(?=.*\\bextreme\\b)(?=.*\\bbutoden\\b).*$",
+      "file": "jingles/n3ds/dbz-butoden.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bdragon\\b)(?=.*\\bquest\\b)(?=.*\\bvii\\b)(?=.*\\bfragments\\b)(?=.*\\bforgotten\\b)(?=.*\\bpast\\b).*$",
+      "file": "jingles/n3ds/dq7.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bdragon\\b)(?=.*\\bquest\\b)(?=.*\\bviii\\b)(?=.*\\bjourney\\b)(?=.*\\bcursed\\b)(?=.*\\bking\\b).*$",
+      "file": "jingles/n3ds/dq8.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bex\\b)(?=.*\\btroopers\\b).*$",
+      "file": "jingles/n3ds/ex-troopers.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\betrian\\b)(?=.*\\bodyssey\\b)(?=.*\\b2\\b)(?=.*\\buntold\\b).*$",
+      "file": "jingles/n3ds/etrian-untold-2.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\betrian\\b)(?=.*\\bodyssey\\b)(?=.*\\biv\\b).*$",
+      "file": "jingles/n3ds/etrian-odyssey-4.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\betrian\\b)(?=.*\\bodyssey\\b)(?=.*\\bv\\b).*$",
+      "file": "jingles/n3ds/etrian-odyssey-5.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\betrian\\b)(?=.*\\bodyssey\\b)(?=.*\\bnexus\\b).*$",
+      "file": "jingles/n3ds/etrian-nexus.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\betrian\\b)(?=.*\\bodyssey\\b)(?=.*\\buntold\\b).*$",
+      "file": "jingles/n3ds/etrian-untold.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bever\\b)(?=.*\\boasis\\b).*$",
+      "file": "jingles/n3ds/ever-oasis.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bfantasy\\b)(?=.*\\blife\\b).*$",
+      "file": "jingles/n3ds/fantasy-life.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bfinal\\b)(?=.*\\bfantasy\\b)(?=.*\\bexplorers\\b).*$",
+      "file": "jingles/n3ds/ff-explorers.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bfire\\b)(?=.*\\bemblem\\b)(?=.*\\bawakening\\b).*$",
+      "file": "jingles/n3ds/fe-awakening.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bfire\\b)(?=.*\\bemblem\\b)(?=.*\\bechoes\\b)(?=.*\\bshadows\\b)(?=.*\\bvalentia\\b).*$",
+      "file": "jingles/n3ds/fe-echoes.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bfire\\b)(?=.*\\bemblem\\b)(?=.*\\bfates\\b).*$",
+      "file": "jingles/n3ds/fe-fates.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bfossil\\b)(?=.*\\bfighters\\b)(?=.*\\bfrontier\\b).*$",
+      "file": "jingles/n3ds/fossil-fighters-frontier.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bgurumin\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/gurumin-3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bhatsune\\b)(?=.*\\bmiku\\b)(?=.*\\bproject\\b)(?=.*\\bmirai\\b)(?=.*\\bdx\\b).*$",
+      "file": "jingles/n3ds/miku-mirai-dx.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bhey\\b)(?=.*\\bpikmin\\b).*$",
+      "file": "jingles/n3ds/hey-pikmin.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bhyrule\\b)(?=.*\\bwarriors\\b)(?=.*\\blegends\\b).*$",
+      "file": "jingles/n3ds/hyrule-warriors.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bkid\\b)(?=.*\\bicarus\\b)(?=.*\\buprising\\b).*$",
+      "file": "jingles/n3ds/kid-icarus-uprising.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bkingdom\\b)(?=.*\\bhearts\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/kh-3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bkirby\\b)(?=.*\\bplanet\\b)(?=.*\\brobobot\\b).*$",
+      "file": "jingles/n3ds/kirby-planet-robobot.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bkirby\\b)(?=.*\\btriple\\b)(?=.*\\bdeluxe\\b).*$",
+      "file": "jingles/n3ds/kirby-triple-deluxe.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bkirby\\b)(?=.*\\bbattle\\b)(?=.*\\broyale\\b).*$",
+      "file": "jingles/n3ds/kirby-br.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bkirby\\b)(?=.*\\bextra\\b)(?=.*\\bepic\\b)(?=.*\\byarn\\b).*$",
+      "file": "jingles/n3ds/kirbys-extra-epic-yarn.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\blord\\b)(?=.*\\bmagna\\b)(?=.*\\bmaiden\\b)(?=.*\\bheaven\\b).*$",
+      "file": "jingles/n3ds/lord-of-magna.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bluigi\\b)(?=.*\\bmansion\\b).*$",
+      "file": "jingles/n3ds/luigis-mansion.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bluigi\\b)(?=.*\\bmansion\\b)(?=.*\\b2\\b).*$",
+      "file": "jingles/n3ds/luigis-mansion-2.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmaplestory\\b)(?=.*\\bgirl\\b)(?=.*\\bdestiny\\b).*$",
+      "file": "jingles/n3ds/maplestory-3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bluigi\\b)(?=.*\\bbowser\\b)(?=.*\\binside\\b)(?=.*\\bstory\\b).*$",
+      "file": "jingles/n3ds/mario-and-luigi-bowsers-inside-story-bowser-jrs-journey.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bluigi\\b)(?=.*\\bdream\\b)(?=.*\\bteam\\b).*$",
+      "file": "jingles/n3ds/mario-and-luigi-dream-team.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bluigi\\b)(?=.*\\bpaper\\b)(?=.*\\bjam\\b)(?=.*\\bbros\\b).*$",
+      "file": "jingles/n3ds/mario-luigi-paper-jam.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bluigi\\b)(?=.*\\bsuperstar\\b)(?=.*\\bsaga\\b).*$",
+      "file": "jingles/n3ds/mario-and-luigi-superstar-saga-bowsers-minions.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bsonic\\b)(?=.*\\bat\\b)(?=.*\\blondon\\b)(?=.*\\b2012\\b)(?=.*\\bolympic\\b)(?=.*\\bgames\\b).*$",
+      "file": "jingles/n3ds/mario-sonic-london-2012.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bsonic\\b)(?=.*\\bat\\b)(?=.*\\brio\\b)(?=.*\\b2016\\b)(?=.*\\bolympic\\b)(?=.*\\bgames\\b).*$",
+      "file": "jingles/n3ds/mario-sonic-rio-2016.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bgolf\\b)(?=.*\\bworld\\b)(?=.*\\btour\\b).*$",
+      "file": "jingles/n3ds/mario-golf-tour.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bkart\\b)(?=.*\\b7\\b).*$",
+      "file": "jingles/n3ds/mario-kart-7.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bparty\\b)(?=.*\\bisland\\b)(?=.*\\btour\\b).*$",
+      "file": "jingles/n3ds/mario-party-island-tour.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmario\\b)(?=.*\\bparty\\b)(?=.*\\bstar\\b)(?=.*\\brush\\b).*$",
+      "file": "jingles/n3ds/mario-party-star-rush.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmetal\\b)(?=.*\\bgear\\b)(?=.*\\bsolid\\b)(?=.*\\bsnake\\b)(?=.*\\beater\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/mgs-3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmetroid\\b)(?=.*\\bsamus\\b)(?=.*\\breturns\\b).*$",
+      "file": "jingles/n3ds/metroid-samus-returns.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmonster\\b)(?=.*\\bhunter\\b)(?=.*\\b3\\b)(?=.*\\bultimate\\b).*$",
+      "file": "jingles/n3ds/mh3u.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmonster\\b)(?=.*\\bhunter\\b)(?=.*\\b4\\b)(?=.*\\bultimate\\b).*$",
+      "file": "jingles/n3ds/mh4u.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmonster\\b)(?=.*\\bhunter\\b)(?=.*\\bgenerations\\b).*$",
+      "file": "jingles/n3ds/mh-generations.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bmonster\\b)(?=.*\\bhunter\\b)(?=.*\\bstories\\b).*$",
+      "file": "jingles/n3ds/mh-stories.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bnew\\b)(?=.*\\bsuper\\b)(?=.*\\bmario\\b)(?=.*\\bbros\\b)(?=.*\\b2\\b).*$",
+      "file": "jingles/n3ds/new-super-mario-bros-2.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bnintendogs\\b)(?=.*\\bcats\\b)(?=.*\\bgolden\\b)(?=.*\\bretriever\\b)(?=.*\\bnew\\b)(?=.*\\bfriends\\b).*$",
+      "file": "jingles/n3ds/nintendogs-cats-golden.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpaper\\b)(?=.*\\bmario\\b)(?=.*\\bsticker\\b)(?=.*\\bstar\\b).*$",
+      "file": "jingles/n3ds/paper-mario-sticker-star.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpersona\\b)(?=.*\\bq\\b)(?=.*\\bshadow\\b)(?=.*\\blabyrinth\\b).*$",
+      "file": "jingles/n3ds/persona-q.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpersona\\b)(?=.*\\bq2\\b)(?=.*\\bnew\\b)(?=.*\\bcinema\\b)(?=.*\\blabyrinth\\b).*$",
+      "file": "jingles/n3ds/persona-q2.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\balpha\\b)(?=.*\\bsapphire\\b).*$",
+      "file": "jingles/n3ds/pokemon-alpha-sapphire.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bmoon\\b).*$",
+      "file": "jingles/n3ds/pokemon-moon.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bmystery\\b)(?=.*\\bdungeon\\b)(?=.*\\bgates\\b)(?=.*\\binfinity\\b).*$",
+      "file": "jingles/n3ds/pokemon-mystery-dungeon-gates-to-infinity.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bomega\\b)(?=.*\\bruby\\b).*$",
+      "file": "jingles/n3ds/pokemon-omega-ruby.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bsun\\b).*$",
+      "file": "jingles/n3ds/pokemon-sun.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bsuper\\b)(?=.*\\bmystery\\b)(?=.*\\bdungeon\\b).*$",
+      "file": "jingles/n3ds/pokemon-super-md.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bultra\\b)(?=.*\\bmoon\\b).*$",
+      "file": "jingles/n3ds/pokemon-ultra-moon.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bultra\\b)(?=.*\\bsun\\b).*$",
+      "file": "jingles/n3ds/pokemon-ultra-sun.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\bx\\b).*$",
+      "file": "jingles/n3ds/pokemon-x.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpokemon\\b)(?=.*\\by\\b).*$",
+      "file": "jingles/n3ds/pokemon-y.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bpoochy\\b)(?=.*\\byoshi\\b)(?=.*\\bwoolly\\b)(?=.*\\bworld\\b).*$",
+      "file": "jingles/n3ds/poochy-yoshi.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bprofessor\\b)(?=.*\\blayton\\b)(?=.*\\bazran\\b)(?=.*\\blegacy\\b).*$",
+      "file": "jingles/n3ds/professor-layton-azran-legacy.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bprofessor\\b)(?=.*\\blayton\\b)(?=.*\\bmiracle\\b)(?=.*\\bmask\\b).*$",
+      "file": "jingles/n3ds/professor-layton-miracle-mask.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bprofessor\\b)(?=.*\\blayton\\b)(?=.*\\bphoenix\\b)(?=.*\\bwright\\b).*$",
+      "file": "jingles/n3ds/professor-layton-vs-phoenix-wright.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bproject\\b)(?=.*\\bx\\b)(?=.*\\bzone\\b).*$",
+      "file": "jingles/n3ds/project-x-zone.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bproject\\b)(?=.*\\bx\\b)(?=.*\\bzone\\b)(?=.*\\b2\\b).*$",
+      "file": "jingles/n3ds/project-x-zone-2.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bradiant\\b)(?=.*\\bhistoria\\b)(?=.*\\bperfect\\b)(?=.*\\bchronology\\b).*$",
+      "file": "jingles/n3ds/radiant-historia.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\brhythm\\b)(?=.*\\bparadise\\b)(?=.*\\bmegamix\\b).*$",
+      "file": "jingles/n3ds/rhythm-paradise.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsenran\\b)(?=.*\\bkagura\\b)(?=.*\\b2\\b).*$",
+      "file": "jingles/n3ds/senran-kagura-2.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsenran\\b)(?=.*\\bkagura\\b)(?=.*\\bburst\\b).*$",
+      "file": "jingles/n3ds/senran-kagura-burst.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bshantae\\b)(?=.*\\bpirate\\b)(?=.*\\bcurse\\b).*$",
+      "file": "jingles/n3ds/shantae-pirate-curse.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bshin\\b)(?=.*\\bmegami\\b)(?=.*\\btensei\\b)(?=.*\\bstrange\\b)(?=.*\\bjourney\\b)(?=.*\\bredux\\b).*$",
+      "file": "jingles/n3ds/smt-strange-journey.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bshin\\b)(?=.*\\bmegami\\b)(?=.*\\btensei\\b)(?=.*\\biv\\b).*$",
+      "file": "jingles/n3ds/smt4.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bshin\\b)(?=.*\\bmegami\\b)(?=.*\\btensei\\b)(?=.*\\biv\\b)(?=.*\\bapocalypse\\b).*$",
+      "file": "jingles/n3ds/smt4-apocalypse.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bshovel\\b)(?=.*\\bknight\\b).*$",
+      "file": "jingles/n3ds/shovel-knight.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsmt\\b)(?=.*\\bdevil\\b)(?=.*\\bsurvivor\\b)(?=.*\\b2\\b)(?=.*\\brecord\\b)(?=.*\\bbreaker\\b).*$",
+      "file": "jingles/n3ds/smt-devil-survivor-2-rb.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsmt\\b)(?=.*\\bdevil\\b)(?=.*\\bsurvivor\\b)(?=.*\\boverclocked\\b).*$",
+      "file": "jingles/n3ds/smt-devil-survivor-oc.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsonic\\b)(?=.*\\ball\\b)(?=.*\\bstars\\b)(?=.*\\bracing\\b)(?=.*\\btransformed\\b).*$",
+      "file": "jingles/n3ds/sonic-racing-transformed.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsonic\\b)(?=.*\\blost\\b)(?=.*\\bworld\\b).*$",
+      "file": "jingles/n3ds/sonic-lost-world.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bstar\\b)(?=.*\\bfox\\b)(?=.*\\b64\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/star-fox-64-3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bstella\\b)(?=.*\\bglow\\b).*$",
+      "file": "jingles/n3ds/stella-glow.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bstory\\b)(?=.*\\bseasons\\b).*$",
+      "file": "jingles/n3ds/story-of-seasons.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsuper\\b)(?=.*\\bmario\\b)(?=.*\\b3d\\b)(?=.*\\bland\\b).*$",
+      "file": "jingles/n3ds/mario-3d-land.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsuper\\b)(?=.*\\bmario\\b)(?=.*\\bmaker\\b)(?=.*\\bnintendo\\b)(?=.*\\b3ds\\b).*$",
+      "file": "jingles/n3ds/super-mario-maker-3ds.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsuper\\b)(?=.*\\bmonkey\\b)(?=.*\\bball\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/super-monkey-ball-3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsuper\\b)(?=.*\\bpokemon\\b)(?=.*\\brumble\\b).*$",
+      "file": "jingles/n3ds/pokemon-rumble.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsushi\\b)(?=.*\\bstriker\\b)(?=.*\\bway\\b)(?=.*\\bsushido\\b).*$",
+      "file": "jingles/n3ds/sushi-striker-the-way-of-sushido.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\btales\\b)(?=.*\\babyss\\b).*$",
+      "file": "jingles/n3ds/tales-of-abyss.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bterraria\\b).*$",
+      "file": "jingles/n3ds/terraria_.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\blegend\\b)(?=.*\\blegacy\\b).*$",
+      "file": "jingles/n3ds/legend-of-legacy.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\blegend\\b)(?=.*\\bzelda\\b)(?=.*\\blink\\b)(?=.*\\bbetween\\b)(?=.*\\bworlds\\b).*$",
+      "file": "jingles/n3ds/tloz-albw.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\blegend\\b)(?=.*\\bzelda\\b)(?=.*\\bmajora\\b)(?=.*\\bmask\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/tloz-mm3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\blegend\\b)(?=.*\\bzelda\\b)(?=.*\\bocarina\\b)(?=.*\\btime\\b)(?=.*\\b3d\\b).*$",
+      "file": "jingles/n3ds/tloz-oot3d.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bsnack\\b)(?=.*\\bworld\\b)(?=.*\\btrejarers\\b).*$",
+      "file": "jingles/n3ds/snack-world.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\btheatrhythm\\b)(?=.*\\bfinal\\b)(?=.*\\bfantasy\\b).*$",
+      "file": "jingles/n3ds/theatrhythm-ff.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\btheatrhythm\\b)(?=.*\\bfinal\\b)(?=.*\\bfantasy\\b)(?=.*\\bcurtain\\b)(?=.*\\bcall\\b).*$",
+      "file": "jingles/n3ds/theatrhythm-curtain-call.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\btomodachi\\b)(?=.*\\blife\\b).*$",
+      "file": "jingles/n3ds/tomodachi-life.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bwarioware\\b)(?=.*\\bgold\\b).*$",
+      "file": "jingles/n3ds/warioware-gold.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\byo\\b)(?=.*\\bkai\\b)(?=.*\\bwatch\\b).*$",
+      "file": "jingles/n3ds/yo-kai-watch.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\byo\\b)(?=.*\\bkai\\b)(?=.*\\bwatch\\b)(?=.*\\b2\\b)(?=.*\\bbony\\b)(?=.*\\bspirits\\b).*$",
+      "file": "jingles/n3ds/yo-kai-watch-2-bony-spirits.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\byo\\b)(?=.*\\bkai\\b)(?=.*\\bwatch\\b)(?=.*\\b2\\b)(?=.*\\bfleshy\\b)(?=.*\\bsouls\\b).*$",
+      "file": "jingles/n3ds/yo-kai-watch-2-fleshy-souls.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\byo\\b)(?=.*\\bkai\\b)(?=.*\\bwatch\\b)(?=.*\\b2\\b)(?=.*\\bpsychic\\b)(?=.*\\bspecters\\b).*$",
+      "file": "jingles/n3ds/yo-kai-watch-2-psychic-specters.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\byo\\b)(?=.*\\bkai\\b)(?=.*\\bwatch\\b)(?=.*\\b3\\b).*$",
+      "file": "jingles/n3ds/yo-kai-watch-3.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\byoshi\\b)(?=.*\\bnew\\b)(?=.*\\bisland\\b).*$",
+      "file": "jingles/n3ds/yoshi-new-island.wav"
+    },
+    {
+      "game": "(?i)^(?=.*\\bzero\\b)(?=.*\\bescape\\b)(?=.*\\bvirtue\\b)(?=.*\\blast\\b)(?=.*\\breward\\b).*$",
+      "file": "jingles/n3ds/zero-escape-vlr.wav"
+    }
+  ]
+}

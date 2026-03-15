@@ -18,11 +18,20 @@ then
     exit 1
 fi
 
-mkdir -p jingles/n3ds
+# Path to the repo root's jingles directory and index.json, relative to this script.
+# This script lives at Contributing/n3ds/ inside the repo.
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+JINGLES_DIR="$REPO_ROOT/jingles/n3ds"
+INDEX_JSON="$REPO_ROOT/index.json"
 
-for ROM in *.3ds *.cci; do
+GAMES_DIR="$SCRIPT_DIR/games"
+mkdir -p "$JINGLES_DIR"
+
+for ROM in "$GAMES_DIR"/*.3ds "$GAMES_DIR"/*.cci; do
     echo "Processing $ROM..."
-    OUTPUT="${ROM%.*}.wav"
+    BASENAME="${ROM%.*}"
+    BASENAME="$(basename "$BASENAME")"
 
     3dstool -xvtf cci "$ROM" -0 partition0.cxi --header /dev/null > /dev/null
     3dstool -xvtf cxi partition0.cxi --exefs exefs.bin --exefs-auto-key > /dev/null
@@ -42,59 +51,93 @@ with open('banner_dir/banner.bcwav','wb') as f:
     f.write(data[:size])
 "
 
-    vgmstream-cli banner_dir/banner.bcwav -o "jingles/n3ds/$OUTPUT" > /dev/null
+    # Compute the sanitized filename (slug) and human-readable game title in one awk pass
+    read -r FINAL GAME_TITLE < <(
+        printf '%s\n' "$BASENAME" \
+        | iconv -f utf-8 -t ascii//TRANSLIT \
+        | awk '
+        function trim(s) { gsub(/^ +| +$/, "", s); return s }
+        {
+            s=$0
+
+            # 1. Strip TitleID prefix
+            sub(/^0004[0-9A-Fa-f]{12}[-_ ]?/, "", s)
+
+            # 2. Strip trailing noise tags (before the extension, which is already gone)
+            sub(/[-_ .]?[Ss]tandard$/, "", s)
+            sub(/[-_ .]?[Dd]ecrypted$/, "", s)
+            sub(/[-_ .]?[Pp]iratelegit$/, "", s)
+
+            # 3. Strip parenthetical regions/revisions for both outputs
+            gsub(/\([^)]*\)/, "", s)
+            s = trim(s)
+
+            # 4. Move leading article — on the human-readable copy, before slugifying
+            human = s
+            if (match(human, /^(The|An|A) /)) {
+                art  = substr(human, 1, RLENGTH-1)
+                rest = substr(human, RLENGTH+1)
+                rest = trim(rest)
+                dash = index(rest, " - ")
+                if (dash > 0) {
+                    human = substr(rest,1,dash-1) ", " art " - " substr(rest,dash+3)
+                } else {
+                    human = rest ", " art
+                }
+            }
+            # Clean up any double spaces left after stripping parens
+            gsub(/ {2,}/, " ", human)
+            human = trim(human)
+
+            # 5. Slug: build from the article-moved human string
+            slug = human
+            gsub(/\047/, "", slug)           # apostrophes
+            gsub(/ *- */, "-", slug)
+            gsub(/ /, "-", slug)
+            gsub(/[^A-Za-z0-9-]+/, "", slug)
+            gsub(/-+/, "-", slug)
+            gsub(/^-|-$/, "", slug)
+
+            print tolower(slug) ".wav", human
+        }')
+
+    vgmstream-cli banner_dir/banner.bcwav -o "$JINGLES_DIR/$FINAL" > /dev/null
 
     rm -r partition0.cxi exefs.bin exefs_dir/ banner.bin banner_dir/
 
-    FINAL=$(printf '%s\n' "$OUTPUT" \
-        | iconv -f utf-8 -t ascii//TRANSLIT \
-        | awk '
-    {
-        s=$0
+    echo "Saved: $FINAL  (Game: $GAME_TITLE)"
 
-        # 1. Strip TitleID prefix
-        sub(/^0004[0-9A-Fa-f]{12}[-_ ]?/, "", s)
+    # --- Update index.json ---
+    JINGLE_PATH="jingles/n3ds/$FINAL"
 
-        # 2. Protect extension
-        if (match(s, /\.[^.]+$/)) {
-            ext=substr(s,RSTART); s=substr(s,1,RSTART-1)
-        } else ext=""
+    python3 - "$INDEX_JSON" "$GAME_TITLE" "$JINGLE_PATH" <<'PYEOF'
+import sys, json
 
-        # 3. Strip trailing "standard"
-        sub(/[-_ .]?[Ss]tandard$/, "", s)
-	sub(/[-_ .]?[Dd]ecrypted$/, "", s)
-	sub(/[-_ .]?[Pp]iratelegit$/, "", s)
+index_path, game_title, jingle_path = sys.argv[1], sys.argv[2], sys.argv[3]
 
-        # 4. Move leading article BEFORE sanitization, while " - " is still intact
-        #    "The Legend of Zelda - A Link Between Worlds (USA)"
-        #    -> "Legend of Zelda - The - A Link Between Worlds (USA)"
-        #    We insert ", Art" just before the first " - " if present, else at end
-        if (match(s, /^(The|An|A) /)) {
-            art=substr(s,1,RLENGTH-1)       # "The"
-            rest=substr(s,RLENGTH+1)        # "Legend of Zelda - A Link..."
-            dash=index(rest, " - ")
-            if (dash > 0) {
-                # Insert article just before the subtitle dash
-                s=substr(rest,1,dash-1) " - " art " - " substr(rest,dash+3)
-            } else {
-                s=rest " - " art
-            }
-        }
+try:
+    with open(index_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+except FileNotFoundError:
+    data = {"name": "Red's Jingles Pack", "entries": []}
 
-        # 5. Now sanitize
-        gsub(/\047/, "", s)
-        gsub(/\([^)]*\)/, "", s)
-        gsub(/ *- */, "-", s)
-        gsub(/ /, "-", s)
-        gsub(/\./, "", s)
-        gsub(/[^A-Za-z0-9-]+/, "", s)
-        gsub(/-+/, "-", s)
-        gsub(/^-|-$/, "", s)
+entries = data.get("entries", [])
 
-        print tolower(s) ext
-    }')
+# Remove any existing entry for this file path (re-run idempotency)
+entries = [e for e in entries if e.get("file") != jingle_path]
 
-    [ "$FINAL" != "$OUTPUT" ] && mv -- "jingles/n3ds/$OUTPUT" "jingles/n3ds/$FINAL"
+entries.append({"game": game_title, "file": jingle_path})
 
-    echo "Saved: $FINAL"
+# Sort alphabetically by game title (case-insensitive)
+entries.sort(key=lambda e: e["game"].lower())
+
+data["entries"] = entries
+
+with open(index_path, 'w', encoding='utf-8') as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+    f.write('\n')
+
+print(f"index.json updated: {game_title}")
+PYEOF
+
 done
