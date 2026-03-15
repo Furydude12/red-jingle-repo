@@ -6,7 +6,7 @@ First, get your 3DS rom files ready. This means they'll need to be in either the
 
 Then, you're going to need to download the tools [3dstool](https://github.com/dnasdw/3dstool) and [vgmstream](https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-win64.zip). Depending on the rom, I would highly recommend you have `python3`, and on Windows, python is required.
 
-Once you have these installed, move all your ROMs into one folder. For ease of use, scripts are provided to extract your .wavs for you. (`extract_jingle.sh/bat` in the Contributing/n3ds directory of the repository.) Thank you to Celthium for providing the batchfile.
+Once you have these installed, move all your ROMs into one folder. For ease of use, scripts are provided to extract your .wavs for you. (`extract_jingle.sh/bat` in the Contributing/n3ds directory of the repository. If you are using the .bat, then you also need to download `_sanitize.py`) Thank you to Celthium for providing the batchfile.
 
 Then, move your jingles into `jingles/n3ds`, and edit the `index.json` in the root of the repository accordingly, adding a new entry in the json with this format:
 
