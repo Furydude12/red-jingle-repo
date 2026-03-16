@@ -40,7 +40,7 @@ set "GAMES_DIR=%SCRIPT_DIR%\games"
 if not exist "%JINGLES_DIR%" mkdir "%JINGLES_DIR%"
 if not exist "%GAMES_DIR%" mkdir "%GAMES_DIR%"
 
-for %%f in ("%GAMES_DIR%\*.3ds" "%GAMES_DIR%\*.cci" "%GAMES_DIR%\*.app" "%GAMES_DIR%\*.cia" "%GAMES_DIR%\*.z3ds" "%GAMES_DIR%\*.zcci") do (
+for %%f in ("%GAMES_DIR%\*.3ds" "%GAMES_DIR%\*.cci") do (
     echo [Processing] %%~nxf...
 
     "%TOOL_3DS%" -xvtf cci "%%f" -0 partition0.cxi >nul 2>&1

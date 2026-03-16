@@ -40,7 +40,7 @@ INDEX_JSON="$REPO_ROOT/index.json"
 GAMES_DIR="$SCRIPT_DIR/games"
 mkdir -p "$JINGLES_DIR"
 
-for ROM in "$GAMES_DIR"/*.3ds "$GAMES_DIR"/*.cci "$GAMES_DIR"/*.app "$GAMES_DIR"/*.cia "$GAMES_DIR"/*.z3ds "$GAMES_DIR"/*.zcci; do
+for ROM in "$GAMES_DIR"/*.3ds "$GAMES_DIR"/*.cci; do
     echo "Processing $ROM..."
     BASENAME="${ROM%.*}"
     BASENAME="$(basename "$BASENAME")"
